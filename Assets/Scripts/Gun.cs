@@ -24,7 +24,7 @@ public class Gun : MonoBehaviour
         GameObject bulletGO = GameObject.Instantiate(bulletPrefab, container, false);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
 
-        float xOffset = Random.Range(-10f, 16f);
+        float xOffset = Random.Range(-10f, 10f);
         float yOffset = Random.Range(-9f, 9f);// * (Random.Range(0, 100) > 50 ? 1 : -1);
 
         Vector3 midPos = transform.position + Vector3.right * xOffset + Vector3.up * yOffset;

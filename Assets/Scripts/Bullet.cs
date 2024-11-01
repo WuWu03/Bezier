@@ -15,6 +15,7 @@ public class Bullet : MonoBehaviour
         if (m_QueuePos.Count < 1 && distance < 0.05f)
         {
             GameObject.Destroy(gameObject);
+            m_IsMove = false;
             return;
         }
 
